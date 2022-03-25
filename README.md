@@ -4,7 +4,7 @@ vue3根据文字起始位置和结束位置高亮
 
 ### 效果图
 
-![demo](public\demo.png)
+![demo](public/demo.png)
 
 ### 安装
 
