@@ -1,8 +1,8 @@
 <template>
   <div style="position: relative;">
     <svg id="svg-container" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
-    <div id="dom-container" class="container" v-ContainerWidthChange:50="onResize"></div>
-    <div id="text-container" class="container">{{text}}</div>
+    <div id="dom-container" class="container" :style="{fontSize: fontSize, lineHeight: lineHeight, letterSpacing: letterSpacing}" v-ContainerWidthChange:50="onResize"></div>
+    <div id="text-container" class="container" :style="{fontSize: fontSize, lineHeight: lineHeight, letterSpacing: letterSpacing}">{{text}}</div>
   </div>
 </template>
 
@@ -19,6 +19,18 @@
     highLight: {
       type: Array,
       default: []
+    },
+    fontSize: {
+      type: String,
+      default: '20px'
+    },
+    lineHeight: {
+      type: String,
+      default: '1.8em'
+    },
+    letterSpacing: {
+      type: String,
+      default: '4px'
     },
     // 高亮样式
     fillColor: {
@@ -186,9 +198,6 @@
   .container {
     white-space: pre-wrap;
     word-break: break-all;
-    line-height: 1.8em;
-    letter-spacing: 4px;
     text-align: left;
-    font-size: 20px;
   }
 </style>

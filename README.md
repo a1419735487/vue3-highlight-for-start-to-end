@@ -1,11 +1,41 @@
-# Vue 3 + Typescript + Vite
+# vue3-highlight-for-start-to-end
 
-This template should help get you started developing with Vue 3 and Typescript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+vue3根据文字起始位置和结束位置高亮
 
-## Recommended IDE Setup
+### 安装
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+```
+npm i vue3-highlight-for-start-to-end
+```
 
-## Type Support For `.vue` Imports in TS
+### 在vue3中使用
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+```vue
+<template>
+	<highlight :text="text" :highLight="highLight"></highlight>
+</template>
+
+<script setup lang="ts">
+    import { highlight } from 'vue3-highlight-for-start-to-end';
+	import 'vue3-highlight-for-start-to-end/dist/style.css'
+</script>
+```
+
+### 插槽
+
+| 名称          | 解释       | 类型   | 默认值   | 示例                                  |
+| ------------- | ---------- | ------ | -------- | ------------------------------------- |
+| text          | 文本内容   | string | ''       | Sunfire666                            |
+| highLight     | 高亮数据   | array  | []       | [{start: 0,end: 1},{start: 2,end: 3}] |
+| fontSize      | 字体大小   | string | ‘20px’   | -                                     |
+| lineHeight    | 行高       | string | '1.8em'  | -                                     |
+| letterSpacing | 字间距     | string | '4px'    | -                                     |
+| fillColor     | 高亮颜色   | string | 'yellow' | -                                     |
+| fillOpacity   | 高亮透明度 | string | '0.6'    | -                                     |
+
+### 事件
+
+| 名称         | 解释                                     |
+| ------------ | ---------------------------------------- |
+| v-on:ifError | 高亮数据有误导致无法正常高亮时调用的事件 |
+
