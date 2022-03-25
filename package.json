@@ -1,0 +1,34 @@
+{
+  "name": "vue3-highlight-for-start-to-end",
+  "version": "0.0.1",
+  "file": [
+    "dist"
+  ],
+  "main": "./dist/highlight.umd.ts",
+  "module": "./dist/highlight.es.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/highlight.es.ts",
+      "require": "./dist/highlight.umd.ts"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "scripts": {
+    "serve": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@vitejs/plugin-vue": "^2.2.0",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0",
+    "vue-tsc": "^0.29.8"
+  }
+}
