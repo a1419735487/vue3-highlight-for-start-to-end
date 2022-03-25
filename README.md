@@ -2,6 +2,10 @@
 
 vue3根据文字起始位置和结束位置高亮
 
+### 效果图
+
+![demo](.\public\demo.png)
+
 ### 安装
 
 ```
@@ -12,12 +16,12 @@ npm i vue3-highlight-for-start-to-end
 
 ```vue
 <template>
-	<highlight :text="text" :highLight="highLight"></highlight>
+    <highlight :text="text" :highLight="highLight"></highlight>
 </template>
 
 <script setup lang="ts">
     import { highlight } from 'vue3-highlight-for-start-to-end';
-	import 'vue3-highlight-for-start-to-end/dist/style.css'
+    import 'vue3-highlight-for-start-to-end/dist/style.css'
 </script>
 ```
 
