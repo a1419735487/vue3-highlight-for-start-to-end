@@ -199,5 +199,6 @@
     white-space: pre-wrap;
     word-break: break-all;
     text-align: left;
+    font-family: SimHei, SimSun, fangsong;
   }
 </style>
