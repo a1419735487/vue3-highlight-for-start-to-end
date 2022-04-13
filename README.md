@@ -21,7 +21,7 @@ npm i vue3-highlight-for-start-to-end
 
 <script setup lang="ts">
     import { highlight } from 'vue3-highlight-for-start-to-end';
-    import 'vue3-highlight-for-start-to-end/dist/style.css'
+    import 'vue3-highlight-for-start-to-end/dist/style.css';
 </script>
 ```
 
@@ -42,4 +42,3 @@ npm i vue3-highlight-for-start-to-end
 | 名称         | 解释                                     |
 | ------------ | ---------------------------------------- |
 | v-on:ifError | 高亮数据有误导致无法正常高亮时调用的事件 |
-

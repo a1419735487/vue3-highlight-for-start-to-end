@@ -36,10 +36,10 @@
     }]
   }
   const startChange = (e: any) => {
-    highLight.value[0].start = e.data
+    highLight.value[0].start = e.target.value
   }
   const endChange = (e: any) => {
-    highLight.value[0].end = e.data
+    highLight.value[0].end = e.target.value
   }
   const errorAlert = () => {
     alert('我错了')
