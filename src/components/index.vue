@@ -65,6 +65,7 @@
 
   // 创建文本高亮
   const createHighLight = () => {
+    // (c) 2022 三火Sunfire MIT
     let svgContainer: any = document.getElementById('svg-container')
     ,domContainer: any = document.getElementById('dom-container')
     svgContainer.style.height = domContainer.clientHeight

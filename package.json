@@ -1,6 +1,9 @@
 {
   "name": "vue3-highlight-for-start-to-end",
-  "version": "0.0.4",
+  "version": "0.0.5",
+  "description": "vue3根据文字起始位置和结束位置高亮",
+  "author": "三火Sunfire",
+  "license": "MIT",
   "file": [
     "dist"
   ],
