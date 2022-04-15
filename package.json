@@ -1,14 +1,12 @@
 {
   "name": "vue3-highlight-for-start-to-end",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "vue3根据文字起始位置和结束位置高亮",
   "author": "三火Sunfire",
   "license": "MIT",
-  "file": [
-    "dist"
-  ],
-  "main": "./dist/highlight.umd.ts",
-  "module": "./dist/highlight.es.ts",
+  "files": ["dist"],
+  "main": "./dist/highlight.es.ts",
+  "module": "./dist/highlight.umd.ts",
   "exports": {
     ".": {
       "import": "./dist/highlight.es.ts",
@@ -18,6 +16,10 @@
       "import": "./dist/style.css",
       "require": "./dist/style.css"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a1419735487/vue3-highlight-for-start-to-end"
   },
   "scripts": {
     "serve": "vite",
